@@ -116,10 +116,10 @@ function writePassword() {
   // from the masterArray, and add it to a string which will hold the partial
   // password. 
 
-  var password = generatePassword();
-  var passwordText = document.querySelector("#password");
+  // var password = generatePassword();
+  // var passwordText = document.querySelector("#password");
 
-  passwordText.value = password;
+  // passwordText.value = password;
 
 }
 // we need another function that creates a password - hint: generatePassword() on line 7
@@ -138,7 +138,7 @@ function generatePassword(length) {
     // and then add that character to the variable generatedPassword.
 
   }
-  document.querySelector("#password").textContent = result
+  document.querySelector("#password").value = result
   console.log(result);
   console.log("My logged PW:" + result)
   //document.querySelector("#password").textContent=result
@@ -159,6 +159,4 @@ generateBtn.addEventListener("click", writePassword);
 //click tj//
 //"if a click happens...then use the writepassword function" tj//
 
-//unfortunately, while this program will indeed generate a randomized password in the console, 
-//it will not display the password in the box. There seems to be an error somewhere in the "display" portion.
-//pleae visit the console on the page
+//see randomly generated PW in box!
